@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+	    <LinearLayout 
+	        android:id="@+id/emergency"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/emergency"
+	        android:orientation="vertical"
+	        android:layout_weight="1" >
+	        
+	    </LinearLayout>
+	    
+	    <HorizontalScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <LinearLayout 
+	            android:id="@+id/kind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" >
+	        
+		        <Button 
+		            android:id="@+id/add"
+		            android:layout_margin="5dip"
+		            android:background="@drawable/button_shape"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_gravity="center_vertical"
+		            android:text="+"/>
+	        
+	        </LinearLayout>
+	        
+	    </HorizontalScrollView>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+	        
+		    <Button 
+		        android:id="@+id/half"
+		        android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center_vertical"
+		        android:text="12小时内"/>
+		        
+		    <Button 
+		        android:id="@+id/one"
+		        android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center_vertical"
+		        android:text="1天内"/>
+		        
+		    <Button 
+		        android:id="@+id/two"
+		        android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center_vertical"
+		        android:text="2天内"/>
+		        
+		    <Button 
+		        android:id="@+id/three"
+		        android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center_vertical"
+		        android:text="3天以上"/>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	    </LinearLayout>
+	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_weight="1" >
+	        
+	        <Button 
+	            android:id="@+id/new_directely"
+	            android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:text="创建" />
+	        
+	        <Button
+	            android:id="@+id/new_by_voice"
+	            android:layout_margin="5dip"
+		        android:background="@drawable/button_shape"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:text="语音创建" />
+	        
+	        <Button 
+		        android:background="@drawable/button_shape"
+	            android:id="@+id/new_by_text"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="5dip"
+	            android:text="文本创建" />
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+    <ImageView 
+	    android:id="@+id/touchpoint"
+	    android:src="@drawable/circle_green"
+	    android:visibility="invisible"
+	    android:scaleType="fitCenter"
+	    android:layout_width="25dip"
+	    android:layout_height="25dip" />
+      
+    
+</FrameLayout>
+
